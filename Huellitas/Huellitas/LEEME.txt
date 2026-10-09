@@ -1,0 +1,43 @@
+HUELLITAS - AVANCE POO CORREGIDO
+================================
+
+Esta version fue construida siguiendo el diagrama UML entregado.
+
+CONTEO REAL DEL DIAGRAMA:
+- 62 clases del modelo.
+- 30 clases padre/superclases.
+- 32 clases hijas o concretas adicionales.
+- 1 clase Proyecto con main, fuera del UML.
+- Total de archivos .java: 63.
+
+IMPORTANTE SOBRE EL NUMERO 72:
+Si se cuentan tambien las 7 carpetas/paquetes, pom.xml y este LEEME.txt,
+el proyecto contiene 72 elementos principales:
+63 Java + 7 paquetes + pom.xml + LEEME.txt = 72.
+Eso no significa que existan 72 clases Java.
+
+CAMBIOS DE ESTA VERSION:
+- Todos los constructores de las clases del modelo reciben parametros.
+- Los constructores hijos usan super(...) con los datos heredados.
+- Los getters y setters tienen su funcionamiento normal.
+- Los metodos de negocio estan declarados pero sin logica.
+- Los metodos con retorno usan valores neutros (null, 0, 0.0 o false).
+- Se evidencia composicion con creacion interna del objeto o coleccion.
+- Se evidencia agregacion mediante referencias recibidas desde fuera.
+- No se agregaron clases que no aparecen en el UML.
+
+COMPOSICION:
+- Adoptante -> PerfilAdopcion
+- Refugio -> CatalogoMascotas
+- Mascota -> historial de RegistroMedico
+- Adopcion -> SeguimientoAdopcion
+- SeguimientoAdopcion -> VisitaPostAdopcion
+
+AGREGACION:
+- CatalogoMascotas -> Mascota
+- GestorSolicitudes -> Solicitud
+- Refugio -> EspacioRefugio
+- Refugio -> Colaborador
+
+ABRIR EN NETBEANS:
+File > Open Project > seleccionar la carpeta que contiene pom.xml.
